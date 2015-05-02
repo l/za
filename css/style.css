@@ -1,0 +1,18 @@
+/*
+@import url("http://html5resetcss.googlecode.com/files/html5reset-1.6.1.css");
+*/
+@import url("http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css");
+@import url("http://yui.yahooapis.com/3.18.1/build/cssfonts/cssfonts-min.css");
+@import url("http://thomasf.github.io/solarized-css/solarized-light.css");
+
+body {
+  font-size: 16px;
+}
+
+.small {
+  font-size: 12px; /* 75% of the baseline */
+}
+
+.large {
+  font-size: 20px; /* 125% of the baseline */
+}

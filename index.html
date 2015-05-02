@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello World</title>
+<base href="/za/" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-62537019-1', 'auto');
+ga('send', 'pageview');
+</script>
+</head>
+<body>
+<h1>Hello World</h1>
+<p>I'm hosted with GitHub Pages.</p>
+
+<h2>1つ目(mathml)</h2>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mi>x</mi><mo>+</mo><mn>3</mn>
+</math>
+
+<h2>2つ目(mathml)</h2>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+<mrow><mtable><mlabeledtr><mtd columnalign="right">
+<mfrac><mrow><mi></mi></mrow><mrow><mn>4</mn></mrow></mfrac><mo>=</mo><msubsup><mo>&#x0222B;</mo><mrow><mn>0</mn></mrow><mrow><mn>1</mn></mrow></msubsup><mfrac><mrow><mn>1</mn></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup> </mrow></mfrac><mi>dx</mi><mo>=</mo><munderover><mo>&#x02211;</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mrow><mo>&#x0221E;</mo></mrow></munderover><mfrac><mrow><mrow><mo>(</mo></mrow><mo>-</mo><mn>1</mn><msup><mrow><mo>)</mo></mrow><mi>n</mi></msup> </mrow><mrow><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac>
+</mtd></mlabeledtr></mtable></mrow>
+</math>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+<mrow><mtable><mlabeledtr><mtd columnalign="right">
+<mfrac><mrow><mi></mi></mrow><mrow><mn>4</mn></mrow></mfrac><mo>=</mo><msubsup><mo>&#x0222B;</mo><mrow><mn>0</mn></mrow><mrow><mn>1</mn></mrow></msubsup><mfrac><mrow><mn>1</mn></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup> </mrow></mfrac><mi>dx</mi><mo>=</mo><munderover><mo>&#x02211;</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mrow><mo>&#x0221E;</mo></mrow></munderover><mfrac><mrow><mrow><mo>(</mo></mrow><mo>-</mo><mn>1</mn><msup><mrow><mo>)</mo></mrow><mi>n</mi></msup> </mrow><mrow><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac>
+</mtd></mlabeledtr></mtable></mrow>
+</math>
+
+<h2>3つ目(svgの直書き)</h2>
+<svg version="1.1" baseProfile="full" width="12cm" height="7cm">
+<g fill-opacity="0.7" stroke="black" stroke-width="0.1cm">
+<circle cx="6cm" cy="2cm" r="100" fill="red" transform="translate(0,50)" />
+<circle cx="6cm" cy="2cm" r="100" fill="blue" transform="translate(70,150)" />
+<circle cx="6cm" cy="2cm" r="100" fill="green" transform="translate(-70,150)" />
+</g>
+</svg>
+
+<h2>4つ目(objectタグでsvgの埋め込み)</h2>
+<p>svgの埋め込みだと拡張子がhtmlでも読み込める。svgの直書きだと拡張子がhtmlで表示されない。ここらへんはサーバ側の設定やクライアント側の設定とか色々ありそうで一言では言えないような気がする。まぁ、サーバは本当にデータを渡すためだけに機能し、受け取ったデータをクライアントが解析して、データが正しく表示されればいいのだけれど。</p>
+<div><object class="center" data="/image/tmp.svg" type="image/svg+xml"></object></div>
+
+
+</body>
+</html>
